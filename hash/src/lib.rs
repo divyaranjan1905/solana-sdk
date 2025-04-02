@@ -94,7 +94,6 @@ pub enum ParseHashError {
     Invalid,
 }
 
-#[cfg(feature = "std")]
 impl core::error::Error for ParseHashError {}
 
 impl fmt::Display for ParseHashError {

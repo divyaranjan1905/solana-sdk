@@ -102,7 +102,6 @@ impl FromPrimitive for PubkeyError {
     }
 }
 
-#[cfg(feature = "std")]
 impl core::error::Error for PubkeyError {}
 
 impl fmt::Display for PubkeyError {
@@ -360,7 +359,6 @@ impl FromPrimitive for ParsePubkeyError {
     }
 }
 
-#[cfg(feature = "std")]
 impl core::error::Error for ParsePubkeyError {}
 
 impl fmt::Display for ParsePubkeyError {

@@ -242,10 +242,8 @@ pub enum InstructionError {
     // conversions must also be added
 }
 
-#[cfg(feature = "std")]
 impl core::error::Error for InstructionError {}
 
-#[cfg(feature = "std")]
 impl fmt::Display for InstructionError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
@@ -441,7 +439,6 @@ pub enum LamportsError {
     ArithmeticOverflow,
 }
 
-#[cfg(feature = "std")]
 impl core::error::Error for LamportsError {}
 
 impl fmt::Display for LamportsError {
